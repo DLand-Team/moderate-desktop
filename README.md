@@ -3,6 +3,12 @@
 
 #### 使用JetBrains Runtime 17，springboot 3.0，JCEF版本为chromium 104
 
+#### 项目进度
+- 已搭建基于jcef的java桌面端框架
+
+#### 下一目标
+- 添加前端js部分，并整合入桌面端
+
 #### JetBrains Runtime下载地址
 - https://github.com/JetBrains/JetBrainsRuntime/releases
 - 在Binaries for developers这一栏中下载“JBR with JCEF”，文件名以“jbrsdk_jcef”开头的
