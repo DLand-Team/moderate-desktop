@@ -30,7 +30,7 @@
 - 整体基于springboot，运行在JetBrains Runtime中
 - 框架代码使用maven开发Java Web的模式
 - 前端代码打包后，放入Java Web项目的resources/static目录下，也就是使用springboot将前端代码发布到localhost下
-- springboot启动完成后，启动Javaa界面，在Java界面中运行Chromium内核，显示springboot发布的前端页面
+- springboot启动完成后，启动Java界面，在Java界面中运行Chromium内核，显示springboot发布的前端页面
 
 #### 相比于Electron的优势
 - 无需繁重的webpack配置，减少学习成本
