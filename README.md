@@ -1,7 +1,7 @@
 # moderate-desktop
 基于Java+chromium的桌面程序开发框架
 
-#### 使用JetBrains Runtime 17，springboot 3.0，JCEF版本为chromium 104
+#### 使用JetBrains Runtime 17，SpringBoot 3.0，JCEF版本为Chromium 104
 
 #### 项目进度
 - 已搭建基于jcef的java桌面端框架
@@ -27,19 +27,20 @@
 - JCEF使用完整的Chromium内核，兼容前端所有框架，使用js即可进行高效界面开发
 
 #### 本框架运行原理
-- 整体基于springboot，运行在JetBrains Runtime中
-- 框架代码使用maven开发Java Web的模式
-- 前端代码打包后，放入Java Web项目的resources/static目录下，也就是使用springboot将前端代码发布到localhost下
-- springboot启动完成后，启动Java界面，在Java界面中运行Chromium内核，显示springboot发布的前端页面
+- 整体基于SpringBoot，运行在JetBrains Runtime中
+- 框架代码使用Maven开发Java Web的模式
+- 前端代码打包后，放入Java Web项目的resources/static目录下，也就是使用SpringBoot将前端代码发布到localhost下
+- SpringBoot启动完成后，启动Java界面，在Java界面中运行Chromium内核，显示SpringBoot发布的前端页面
+- JS与Java的交互，即成为了web项目前后端的交互。可以使用Http + Websocket的方式，也可以用Java去定义CEF与页面的交互接口
 
 #### 相比于Electron的优势
-- 无需繁重的webpack配置，减少学习成本
-- 引入springboot，可以使用http与websocket进行webview与java的交互，更加符合web开发人员的习惯，减少学习成本
-- 引入springboot，可以使用spring的周边生态，例如实现客户端使用mybatis操作数据库，减少学习成本
-- 可实现多webview模式，提高代码灵活性，实现“微前端”的概念
+- 无需繁重的Webpack配置，减少学习成本
+- 引入SpringBoot，可以使用Http与Websocket进行WebView与Java的交互，更加符合Web开发人员的习惯，减少学习成本
+- 引入SpringBoot，可以使用Spring的周边生态，例如实现客户端使用MyBatis操作数据库，减少学习成本
+- 可实现多WebView模式，提高代码灵活性，实现“微前端”的概念
 - 掌握了浏览器内核，可以自定义交互接口
-- java提供了原生多线程支持
-- 通过java也能够更加简单地使用native库，例如opencv
+- Java提供了原生多线程支持
+- 通过Java也能够更加简单地使用Native库，例如OpenCV
 
 #### 卷与反卷
 - 卷，即同一个业务，换着花样，各种框架技术栈轮着写
